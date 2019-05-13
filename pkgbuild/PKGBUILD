@@ -1,0 +1,15 @@
+# $Id$
+# Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
+
+pkgname=blackbird-settings-xsession
+pkgver=1.0
+pkgrel=1
+pkgdesc="Xsession scripts for setting up the plasma5-profile xdg directory path."
+arch=('any')
+url='https://github.com/blackbird-os/blackbird-settings-xsession'
+license=('GPL')
+
+package() {
+  cd ../..
+  cp -aR etc $pkgdir/
+}
